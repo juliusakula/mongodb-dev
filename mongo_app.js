@@ -8,6 +8,8 @@ MongoClient.connect('mongodb://127.0.0.1:27017/test', function(err, db) {
     db.collection('coll').findOne({}, function(err, doc) {
         //homework 2.1
         //db.data.find({"Wind Direction": { $gt: 180, $lt: 360} }).sort({"Temperature": 1}).limit(1);
+        // homework 2.2
+        //db.data.find({}).sort({"State" : 1}).sort({"Temperature": -1});
         if(err) throw err;
 
         // Print the result. 
